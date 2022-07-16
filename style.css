@@ -130,7 +130,7 @@ nav .portfolioicon-burger .line{
         top: 80px;
         bottom: 100%;
         z-index: 9;
-        background:rgb(1, 36, 36);
+        background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
         color: #fff;
         display: flex;
         width: auto;
