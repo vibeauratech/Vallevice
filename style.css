@@ -473,4 +473,15 @@ hr{
     }
 }
 
+#class-margin{
+    margin-top: 50px;
+}
+
+#class-margin p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #ccc;
+    padding-bottom: 10px;
+}
+
 
