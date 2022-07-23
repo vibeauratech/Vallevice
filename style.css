@@ -5,7 +5,9 @@
     padding: 0;    
     text-decoration: none;
     box-sizing: border-box;
-    background: black;     
+    background: black; 
+    color: #FFF; 
+     
 }
 :root{
     
@@ -268,6 +270,23 @@ nav .portfolioicon-burger .line{
         margin-top: 0%;
         margin-left: 0%;
     }
+}
+
+
+
+.bg-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: .3;
+}
+.bg-text h1{
+    font-size: 500px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 3px #ccc;
+    text-transform: uppercase;
 }
 
 
