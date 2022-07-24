@@ -290,6 +290,7 @@ nav .portfolioicon-burger .line{
 }
 
 
+
 .footer-text{
     color: #fff;
     margin-top: 10px;
@@ -301,13 +302,13 @@ nav .portfolioicon-burger .line{
 .footer-text h2{
     color: #fff;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 300;
     margin-bottom: 5px;
 }
 @media screen and (max-width:768px){
     .footer-text h2{
-        font-size:28px ;
+        font-size:18px ;
     }    
 }
 
@@ -361,6 +362,7 @@ nav .portfolioicon-burger .line{
 
 .collection h2{
     color: #ccc;
+    font-size: 16px;
 }
 .collection a{
     color: #ccc;
@@ -370,7 +372,7 @@ nav .portfolioicon-burger .line{
 
 #diff h2{
     color: #ccc;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -445,6 +447,15 @@ nav .portfolioicon-burger .line{
          margin-bottom: 5%;
         margin-right: 0%;
     }
+    .pro-center p{
+        font-size: 16px;
+    }
+    .pro-left p{
+        font-size: 14px;
+    }
+   .pro-left .collection h2{
+    font-size: 18px;
+   }
     
 }
 
@@ -474,11 +485,14 @@ nav .portfolioicon-burger .line{
 
 @media screen and (max-width:768px){
     .pro-right h2{
-        font-size:24px ;
+        font-size:18px ;
     }
     .pro-right h3{
         font-size:16px ;
         padding-bottom: 20px;
+    }
+    .pro-right p{
+        font-size: 14px;
     }
 }
 
