@@ -272,6 +272,62 @@ nav .portfolioicon-burger .line{
     }
 }
 
+.gallery-content{
+    position: relative;
+}
+
+.swiper {
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 80px 0 0;
+}
+
+.swiper img{
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+    object-fit: cover;
+}
+.slide-text{
+    text-align: center;
+    padding: 10px;
+}
+.slide-text p{
+    margin-bottom: 30px;
+}
+.gallery-content .swiper-button-prev{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      color: rgba(255,255,255,0.2);
+      line-height: 110px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      transition: all ease 0.5s;
+
+}
+.gallery-content .swiper-button-next{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: rgba(255,255,255,0.2);
+    line-height: 110px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: all ease 0.5s;
+
+}
+.gallery-content .swiper-scrollbar{
+    background: rgba(255,255,255,0.2);
+}
+.gallery-content .swiper-scrollbar-drag{
+    background: #ccc;
+}
 
 
 .bg-text{

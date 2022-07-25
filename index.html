@@ -7,6 +7,9 @@
     <title>Vallevice</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head> 
 
 <body>
@@ -46,6 +49,86 @@
             </div>   
         </div>    
     </div>
+
+    <div class="gallery">
+        <div class="gallery-content">
+                  <!-- Slider main container -->
+          <div class="swiper">
+         <!-- Additional required wrapper -->
+           <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="XFACT.webp">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="women2.jpeg">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="pexels-photo-428340.webp">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="pexels-photo-896291.jpeg">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="XFACT.webp">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="women2.jpeg">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="pexels-photo-428340.webp">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="pexels-photo-896291.jpeg">
+            <div class="slide-text">
+                <h3>Ultrabeam</h3> 
+                <p>2018</p>
+            </div>
+          </div>
+        
+        
+         </div>
+
+         <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>    
+        </div>
+    </div>
+
+
 
     <div class="row">
         <div class="footer-text">
@@ -89,9 +172,6 @@
         </div>
     </div>
    </div>
-
-
-  
 
 
    <div class="row" id="class-margin">
@@ -210,6 +290,32 @@
 
 </div>
    
-    
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+  speed: 2000,
+
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
+
 </body>  
 </html>
