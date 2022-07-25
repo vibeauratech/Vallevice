@@ -329,6 +329,27 @@ nav .portfolioicon-burger .line{
     background: #ccc;
 }
 
+@media only screen and (max-width:768px){
+    .gallery-content .swiper-button-next{
+        display: none;
+    }
+    .gallery-content .swiper-button-prev{
+        display: none;
+    }
+    .slide-text{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .slide-text h3{
+        font-size: 12px;
+    }
+    .slide-text p{
+        font-size: 10px;
+    }
+}
+
+
 
 .bg-text{
     position: absolute;
