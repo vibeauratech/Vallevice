@@ -340,7 +340,7 @@ button#prev{
     cursor: pointer;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1024px){
     .trends{
         display: flex;
         flex-direction: column;
