@@ -500,3 +500,45 @@ button#prev{
         margin-top: 0;
     }
 }
+
+
+.steeze{
+    margin: 0 5%;
+    margin-top: 18%;
+    margin-bottom: 5%;
+}
+
+.steeze h2{
+    margin-bottom: 3%;
+}
+.steeze h3{
+    text-align: right;
+    margin-top: 3%;
+}
+
+.steeze i{
+    margin-left: 2%;
+}
+.item img{
+    width: 85%;
+}
+
+
+.steeze-slider.slick-initialized.slick-slider .slick-arrow{
+    position: absolute;
+    top: -25px;
+}
+
+
+.steeze-slider.slick-initialized.slick-slider .slick-prev.slick-arrow{
+    opacity: 0;
+    right: 180px;
+    left: inherit;
+    
+}
+.steeze-slider.slick-initialized.slick-slider .slick-next.slick-arrow{
+    opacity: 0;
+    right: 90px;
+    
+}
+
