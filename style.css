@@ -430,39 +430,39 @@ button#prev{
     border: 1px solid #D9D9D9;
 }
 #mike:hover{
-    background-image: url(mikevon.jpg);
+    background: url(mikevon.jpg) no-repeat center;
     background-size: contain;
 }
 
 #cali:hover{
-    background-image: url(cali.jpg);
+    background: url(cali.jpg) no-repeat center;
     background-size: contain;
 }
 #woma:hover{
-    background-image: url(women.webp);
+    background: url(women.webp) no-repeat center;
     background-size: contain;
 }
 
 #sirio:hover{
-    background-image: url(sirio-7_ZNLVlJchs-unsplash.jpg);
+    background: url(sirio-7_ZNLVlJchs-unsplash.jpg) no-repeat center;
     background-size: contain;
 }
 #pana:hover{
-    background-image: url(P1.jpg);
+    background: url(P1.jpg) no-repeat center;
     background-size: contain;
 }
 
 #pino:hover{
-    background-image: url(P1.webp);
+    background: url(P1.webp) no-repeat center;
     background-size: contain;
 }
-#suji:hover{
-    background-image: url(P2.webp);
+#zahir:hover{
+    background: url(zahir-namane-TjUJJACTav4-unsplash.jpg) no-repeat center;
     background-size: contain;
 }
 
 #sali:hover{
-    background-image: url(P3.jpeg);
+    background: url(P3.jpeg) no-repeat center;
     background-size: contain;
 }
 
