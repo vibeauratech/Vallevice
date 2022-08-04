@@ -542,3 +542,229 @@ button#prev{
     
 }
 
+
+.contact{
+    margin: 0 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between; 
+}
+.contact-left{
+    flex-basis: 45%;
+}
+.contact-left h2{
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+.contact-left p{
+    margin-bottom: 5%;
+    font-size: 24px;
+    
+}
+.contact-left i{
+    margin-right: 5%;
+    font-size: 24px;
+}
+
+.contact-right{
+    flex-basis: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: -8%;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.contact-text{
+    flex-basis: 100%;
+    flex-grow: 1;
+    background:black;
+    color: white;
+    padding: 40px 0;
+    min-width: 250px;
+}
+.input-field{
+    padding:10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    color: white;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0 10px;
+    background: transparent;
+    
+}
+.contact-form label{
+    font-weight: 500;
+    font-size: 12px;
+    color: #ccc;
+}
+.contact-form ::placeholder{
+    color: #ccc;
+}
+
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border:2px solid #ccc ;
+    color: #C7E4E3;
+    outline: none;
+    background: transparent;
+}
+
+@media screen and (max-width: 768px){
+    .contact{
+        flex-direction: column;
+        text-align: left;
+        margin-top: 15%;    
+    }
+    .contact-left h2{
+        font-size: 18px;
+        width: 80%;
+    }
+    .contact-left i{
+        font-size: 16px;
+    }
+    .contact-left p{
+        font-size: 16px;
+    }
+    .contact-box{
+        margin-top: 2%;
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background: transparent;
+    color: #D9D9D9;
+    padding: 100px 0 0px;
+    font-size: 13px ;
+    line-height: 20px;
+    margin-top: 50px;
+}
+
+.feeter-row{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.feeter-logo{
+    width: 80px;
+    font-size: 18px;       
+}
+
+
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    font-weight: 700;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+
+
+.feeter-ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.feeter-ul li a{
+    font-weight: 700;
+    text-decoration: none;
+}
+.feeter-ul p{
+    list-style: none;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.social-icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    background: transparent;
+    margin-right: 15px;
+    cursor: none;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid #D9D9D9;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+@keyframes moving{
+    0%{
+        left: -20x;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    footer{
+        bottom: unset;
+         
+    }
+
+    .col-logo{
+        flex-basis: 100%;
+        
+    }
+    .col{
+         flex-basis: 100%;
+         padding-bottom: 30px;
+    }
+    .copyright{
+        text-align: center;
+        margin-left: 0;
+        color: white;
+        padding-bottom: 50px;
+    }
+    
+}
