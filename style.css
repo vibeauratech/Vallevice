@@ -477,40 +477,40 @@ button#prev{
     object-fit: cover;
     border: 1px solid #D9D9D9;
 }
-#mike:hover{
+#mike{
     background: url(mikevon.jpg) no-repeat center;
     background-size: contain;
     
 }
 
-#cali:hover{
+#cali{
     background: url(cali.jpg) no-repeat center;
     background-size: contain;
 }
-#woma:hover{
+#woma{
     background: url(women.webp) no-repeat center;
     background-size: contain;
 }
 
-#sirio:hover{
+#sirio{
     background: url(sirio-7_ZNLVlJchs-unsplash.jpg) no-repeat center;
     background-size: contain;
 }
-#pana:hover{
+#pana{
     background: url(P1.jpg) no-repeat center;
     background-size: contain;
 }
 
-#pino:hover{
+#pino{
     background: url(P1.webp) no-repeat center;
     background-size: contain;
 }
-#zahir:hover{
+#zahir{
     background: url(zahir-namane-TjUJJACTav4-unsplash.jpg) no-repeat center;
     background-size: contain;
 }
 
-#sali:hover{
+#sali{
     background: url(P3.jpeg) no-repeat center;
     background-size: contain;
 }
