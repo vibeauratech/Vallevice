@@ -626,6 +626,8 @@ button#prev{
 }
 .item img{
     width: 85%;
+    height: 75vh;
+    object-fit: cover;
 }
 
 
@@ -645,6 +647,14 @@ button#prev{
     opacity: 0;
     right: 90px;
     
+}
+
+@media screen and (max-width: 768px){
+    .item img{
+        width: 85%;
+        height: 35vh;
+        object-fit: cover;
+    }
 }
 
 
