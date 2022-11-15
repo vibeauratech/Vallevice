@@ -10,3 +10,4 @@ $('.steeze-slider').slick({
     slidesToScroll: 2,
     speed: 1000
   }); 
+  
