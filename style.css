@@ -52,6 +52,22 @@
     background: transparent;
   }
 
+  .progress-bar{
+    width: 75%;
+    height: 3px;
+    background: #111;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow: hidden;
+  }
+
+  .progress{
+    width: 10%;
+    height: 3px;
+    background: #f8f8f8;
+    overflow: hidden;
+  }
+
 
   @media screen and (max-width:900px){
     #preloader p{
@@ -60,6 +76,10 @@
     }
     h1 span{
         font-size: 36px;
+    }
+
+    .progress-bar{
+        margin-top: 10%;
     }
   }
 
