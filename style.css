@@ -478,7 +478,7 @@ button#prev{
     border: 1px solid #D9D9D9;
 }
 #mike{
-    background: url(File\ 15.jpg) no-repeat center;
+    background: url(s1.jpg) no-repeat center;
     background-size: contain;
     
 }
@@ -488,14 +488,15 @@ button#prev{
     background-size: contain;
 }
 #woma{
-    background: url(File\ 2.jpg) no-repeat center;
+    background: url(alte4.jpeg) no-repeat center;
     background-size: contain;
 }
 
 #sirio{
-    background: url(File\ 1.jpg) no-repeat center;
+    background: url(tomato.jpg) no-repeat center;
     background-size: contain;
 }
+
 #pana{
     background: url(File\ 16.jpg) no-repeat center;
     background-size: contain;
@@ -506,12 +507,12 @@ button#prev{
     background-size: contain;
 }
 #zahir{
-    background: url(File\ 14.jpg) no-repeat center;
+    background: url(women5.webp) no-repeat center;
     background-size: contain;
 }
 
 #sali{
-    background: url(File\ 12.jpg) no-repeat center;
+    background: url(P1.webp) no-repeat center;
     background-size: contain;
 }
 
