@@ -16,107 +16,6 @@
     
 }
 
- 
-#preloader{
-    background: #ffff;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    margin: 0 auto;
-    z-index: 100000000;
-}
-
-
-#preloader h1 {
-    margin-top: 3.0em;
-    text-align: center;
-    background: transparent;
-  }
-  h1 span {
-    position: relative;
-    top: 20px;
-    font-size: 80px;
-    background: transparent;
-    color: #FE0B0B;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-      0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  #preloader p{
-    margin-top: 2%;
-    color:#fff;
-    font-size: 18px;
-    text-align: center;
-    background: transparent;
-  }
-
-  .progress-bar{
-    width: 75%;
-    height: 3px;
-    background: transparent;
-    margin: 0 auto;
-    margin-top: 5%;
-    overflow: hidden;
-  }
-
-  .progress{
-    width: 10%;
-    height: 3px;
-    background: #FE0B0B;
-    overflow: hidden;
-  }
-
-  .text-blink{
-    animation: blink .7s ease-in-out .1s;
-  }
-
-  .go-btn{
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-  }
-
-  .go-btn a{
-    background: transparent;
-  }
-
-  .nil{
-    display: none;
-  }
-
-  .go-btn img{
-    width: 60px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 10px;
-    background: url(link-bg.png) no-repeat center;
-  }
-
-
-
-
-  @media screen and (max-width:900px){
-
-    #preloader h1 {
-        margin-top: 5.0em;
-    }
-    #preloader p{
-        font-size: 12px;
-        margin-top: 10%;
-    }
-    h1 span{
-        font-size: 36px;
-    }
-
-    .progress-bar{
-        margin-top: 10%;
-    }
-  }
 
 .row{
     width: 90%;
@@ -150,149 +49,111 @@
     background: var(--primary-color);
     
 }
-.logo{
-    float: left;
-    display: flex;
-    color:white;    
-    font-size: 24px; 
-    font-weight: 700;
-    margin-left: 0;
-    cursor: pointer;
-}
-
-.logo strong{
-    color: #fff;
-}
 
 
-nav{
-    z-index: 10;
-    background: var(--primary-color);
+.toggleBtn{
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    height: 90px;
+    top: 0;
     left: 0;
-    right: 0;
-    height: 80px;
-    width: 100%;
+    z-index: 10;
+    border-bottom-right-radius: 100px;
+    background-color: #ffe63e;
+    cursor: pointer;
+    padding: 22px 25px;
+}
+
+
+
+.toggleBtn img{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    object-fit: cover;
+    position: absolute;
+}
+
+.toggleBtn .close-icon{
+    opacity: 0;
+}
+
+.menu{
     position: fixed;
     top: 0;
-    padding: 1.5rem 3%;
-}
-
-nav .links{
-    float: right;
-    padding: 0;
-    margin: 0;
-    display: none;
+    left: 0;
     width: 50%;
     height: 100%;
-    justify-content: space-around;
-    align-items: center;
+    border-radius: 0 0 100% 0;
+    background-color: #ffe63e;
+    z-index: 9;
+    transform: scale(0);
+    transform-origin: top left;
 }
-nav .links li{
+
+nav{
+    background-color: transparent;
+    padding: 100px;
+    transition: all ease 0.5s;
+}
+
+nav ul{
+    padding-left: 0;
+    background-color: transparent;
+}
+
+nav ul li{
     list-style: none;
-    display: inline-block; 
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+nav ul li a{
     position: relative;
-    background: transparent;     
-}
-nav .links li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(28, 175, 106);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-nav .links li:hover::after{
-    width: 100%;
-}
-nav .links li a{
-    color: white;
-    text-decoration: none;
-    font-size: 14px;  
-    background: transparent;   
-}
-nav .links li a:hover{
-    color: rgb(28, 175, 106);
+    font-size: 40px;
     font-weight: 700;
+    font-family: 'messapia';
+    text-decoration: none;
+    background-color: transparent;
+    color: #38444b;
 }
 
-#portfolionav-toggle{
+nav ul li a:hover{
+    color: #0FAA58;
+}
+
+nav ul li a::before{
+    content: '';
     position: absolute;
-    margin-top: -25px;
-    top: -100px;
+    top: 50%;
+    left: -100%;
+    width: 0;
+    height: 3px;
+    background-color: #0FAA58;
+    transition: all ease 0.5s;
 }
 
-nav .portfolioicon-burger{
-    display: block;
-    position: absolute;
-    right: 5%;
-    top: 45%;
-    transform: translateY(-50%);
-    
-}
-nav .portfolioicon-burger .line{
-    width: 25px;
-    height: 2px;
-    background-color:var(--secondary-color) ;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
+nav ul li a:hover:before{
+    width: 100%;
+    left: 0;
 }
 
-@media screen and (max-width:2560px) {
-    nav .links{
-        float: none;
-        position: fixed;
-        padding: 0;
-        margin: 0;
-        left: 0;
-        right: 0;
-        top: 80px;
-        bottom: 100%;
-        z-index: 9;
-        background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
-        color: #fff;
-        display: flex;
-        width: auto;
-        height: auto;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        overflow: hidden;
-        transition: all .5s ease-in-out;
-    }
-    nav .links a{
-        font-size: 20px;
-        color: white;
-        
-    }
-    nav .links li a{
-        color:#fff;
-        text-decoration: none;
-        font-size: 28px; 
-        background: transparent;  
-    }
-
-    nav .portfolioicon-burger{
-        display: block;
-        margin-right: 0px;
+@media screen and (max-width:900px) {
+    .menu{   
+        width: 80%;
+        height: 100%;      
     }
    
-    nav :checked ~ .links {
-        bottom: 0;
+    nav ul li a{
+        font-size: 18px;
     }
-    nav :checked ~ .portfolioicon-burger .line:nth-child(1){
-        transform: translateY(10px) rotate(225deg);
-    }
-    nav :checked ~ .portfolioicon-burger .line:nth-child(3){
-        transform: translateY(-10px) rotate(-225deg);
-    }
-    nav :checked ~ .portfolioicon-burger .line:nth-child(2){
-        opacity: 0;
 
-    }
+    nav{
+        padding: 70px;
+        transition: all ease 0.5s;
+    }   
 }
-
 
 
 
@@ -343,9 +204,10 @@ nav .portfolioicon-burger .line{
     justify-content: space-between;
 }
 .virgo p{
-    border-top: 3px solid #7D1111;
+    border-top: 3px solid #ffe63e;
     padding-top: 1%;
 }
+
 @media screen and (max-width:768px){
     .virgo{
         margin-top: 20%;
@@ -369,7 +231,8 @@ nav .portfolioicon-burger .line{
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    background-color:#7D1111;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     color: #F8F8F8;
     padding: 15px 0;
     text-align: center;

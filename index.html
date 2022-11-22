@@ -13,30 +13,23 @@
 </head> 
 
 <body>
-    
-        <div class="banner-about">
-            <div class="overlay-about">
-                <nav >
-                    <input id="portfolionav-toggle" type="checkbox">
-                    <a href="index.html" class="logo">
-                      <strong style="font-family:georgia ;">Vallevice</strong>
-                    </a>                 
-                    <ul class="links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Men</a></li>
-                        <li><a href="">Women</a></li>
-                        <li><a href="">Alte</a></li>                         
-                        <li><a href="">Contact</a></li>                         
-                    </ul>
-                    
-                    <label for="portfolionav-toggle" class="portfolioicon-burger">
-                        <div class="line"></div>
-                        <div class="k"></div>
-                        <div class="line"></div>
-                    </label>
-                </nav>           
-            </div>
-        </div> 
+
+    <div class="toggleBtn">
+        <img src="menu-bar.png" alt="" class="menu-icon">
+        <img src="close.png" alt="" class="close-icon">
+    </div>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">WORK</a></li>
+                <li><a href="">CONTACT</a></li>         
+            </ul>
+        </nav>
+    </div>
     
         <div class="hero">
             <div class="hero-con" >
@@ -216,8 +209,42 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="script.js"></script>
-  
 
+    <script>
+
+        var toggleBtn = document.querySelector(".toggleBtn");
+        var menu = document.querySelector(".menu");
+
+        var tl = new TimelineMax({paused:true});
+
+        tl.to(".menu-icon", 1.6, {
+            opacity:0,
+            rotation: 180
+        })
+
+        tl.to(".close-icon", 1.6, {
+            opacity:1,
+            rotation: 180,
+        }, "-=0.9")
+
+        tl.to(".menu", 1.6, {
+            scale: 1
+        }, "-=1")
+
+        tl.from(".menu li", 1.6, {
+            opacity: 0,
+            x : -100,
+            stagger: .4
+        })
+
+        tl.reverse();
+
+        toggleBtn.onclick = function(){
+            tl.reversed(!tl.reversed());
+        }
+
+    </script>
 </body>  
 </html>
