@@ -277,13 +277,13 @@ nav ul li a:hover:before{
 .head-text h1{
     font-size: 96px;
     text-transform: uppercase;
-    color: #3f3f3f; 
+    color: #f8f8f8; 
     transition: all ease 0.5s;
 }
 
 .head-text h1:hover{
     color: transparent;
-    -webkit-text-stroke: 3px #3f3f3f;
+    -webkit-text-stroke: 3px #f8f8f8;
 }
 
 .para-text{
@@ -294,11 +294,12 @@ nav ul li a:hover:before{
 .para-text p{
     margin: 0 5%; 
     text-transform: uppercase;  
+    color: #f8f8f8;
 }
 
 @media screen and (max-width:768px){
     .hero{
-        margin-top: 35%;
+        margin-top: 0;
     }
    
     .head-text h1{
