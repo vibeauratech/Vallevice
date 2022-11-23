@@ -30,6 +30,11 @@
             </ul>
         </nav>
     </div>
+
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
     
         <div class="hero">
            <div class="flex-one">
@@ -207,6 +212,8 @@
         
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="script.js"></script>
@@ -230,8 +237,26 @@
             }
             slideImg.src = images[i];
             i++;
-            setTimeout('slider()',1500);
+            setTimeout('slider()',1000);
         } 
+
+        TweenMax.to(".first", 1.5,{
+            delay:.5,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".second", 1.5,{
+            delay:.7,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".third", 1.5,{
+            delay:.9,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
 
         var toggleBtn = document.querySelector(".toggleBtn");
         var menu = document.querySelector(".menu");

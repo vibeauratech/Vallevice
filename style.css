@@ -34,125 +34,6 @@
 
 
 
-#preloader{
-    background: #000;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 10000;   
-}
-
-
-#preloader h1 {
-    margin-top: 6.0em;
-    text-align: center;
-  }
-  h1 span {
-    position: relative;
-    font-family:'poppin';
-    top: 20px;
-    font-size: 80px;
-    color: #fff;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-      0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  #preloader p{
-    margin-top: 2%;
-    color:#fff;
-    font-size: 18px;
-    text-align: center;
-  }
-
-
-
-  .progress-bar{
-    width: 75%;
-    height: 3px;
-    background: #111;
-    margin: 0 auto;
-    margin-top: 5%;
-    overflow: hidden;
-  }
-
-  .progress{
-    width: 10%;
-    height: 3px;
-    background: #f8f8f8;
-    overflow: hidden;
-  }
-
-  .text-blink{
-    animation: blink .7s ease-in-out .1s;
-  }
-
-  .enter{
-    margin: 0 auto;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .enter button{
-    margin: 0 auto;
-    border: 2px solid #fff;
-    width: 200px;
-    height: 55px;
-    text-align: center;
-    background: transparent;
-    color: #fff;
-  }
-
-  .enter button:hover{
-    background: #fff;
-    color: #000;
-  }
-
-
-
-  @keyframes blink{
-    0%{
-        opacity:1;
-    }
-    50%{
-        opacity:.2;
-    }
-    100%{
-        opacity:1;
-    }
-  }
-
-
-
-  @media screen and (max-width:900px){
-    .enter{
-        margin: 0 auto;
-        margin-top: 10%;
-       
-      }
-      #preloader h1 {
-        margin-top: 5.5em;
-    }
-    
-    #preloader p{
-        font-size: 12px;
-        margin-top: 10%;
-    }
-    h1 span{
-        font-size: 36px;
-    }
-
-    .counter{
-        margin-top: 15%;
-    }
-    
-    .progress-bar{
-        margin-top: 10%;
-    }
-  }
-
 
 .toggleBtn{
     display: inline-block;
@@ -256,6 +137,30 @@ nav ul li a:hover:before{
         padding: 70px;
         transition: all ease 0.5s;
     }   
+}
+
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: -5%;
+    top: 0;
+    z-index: 99;
+}
+
+.first{
+    background: #000;
+}
+
+.second{
+    left: 33.3%;
+    background: #000;
+}
+
+.third{
+    left: 66.6%;
+    background: #000;
 }
 
 
