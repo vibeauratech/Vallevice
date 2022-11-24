@@ -10,6 +10,7 @@
 }
 
 
+
 .toggleBtn{
     display: inline-block;
     position: fixed;
@@ -259,7 +260,7 @@ nav ul li a:hover:before{
         font-size: 28px;
         margin-top: -80%;
         margin-left: 35%;
-        z-index: 10;
+        z-index: 5;
         cursor: pointer;
     }
 
@@ -268,7 +269,7 @@ nav ul li a:hover:before{
         font-size: 28px;
         margin-top: 80%;
         margin-right: 35%;
-        z-index: 10;
+        z-index: 5;
         cursor: pointer;
     }
 }
@@ -565,7 +566,7 @@ button#prev{
 }
 .item img{
     width: 85%;
-    height: 75vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -591,7 +592,7 @@ button#prev{
 @media screen and (max-width: 768px){
     .item img{
         width: 85%;
-        height: 35vh;
+        height: 45vh;
         object-fit: cover;
     }
 
