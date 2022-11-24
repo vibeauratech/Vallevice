@@ -31,9 +31,9 @@
         </nav>
     </div>
 
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
+        <div class="overlay first"><h2>VIBES</h2></div>
+        <div class="overlay second"><h2>ON</h2></div>
+        <div class="overlay third"><h2>FITS</h2></div>
 
     
         <div class="hero">
@@ -240,23 +240,23 @@
             }
             slideImg.src = images[i];
             i++;
-            setTimeout('slider()',1000);
+            setTimeout('slider()',2500);
         } 
 
         TweenMax.to(".first", 1.5,{
-            delay:.5,
-            top: "-100%",
-            ease: Expo.easeInOut
-        });
-
-        TweenMax.to(".second", 1.5,{
             delay:.7,
             top: "-100%",
             ease: Expo.easeInOut
         });
 
-        TweenMax.to(".third", 1.5,{
+        TweenMax.to(".second", 1.5,{
             delay:.9,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".third", 1.5,{
+            delay:1.1,
             top: "-100%",
             ease: Expo.easeInOut
         });
