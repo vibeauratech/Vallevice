@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
-    font-family: 'poppins', sans-serif;
+    font-family: 'Founders Grotesk',sans-serif;
     margin: 0;
     padding: 0;    
     text-decoration: none;
@@ -8,6 +8,29 @@
     color: #3F3F3F;
      
 }
+
+@font-face {
+    font-family: 'Founders Grotesk-light',sans-serif;
+    src: url(FoundersGrotesk-Light.otf);
+}
+@font-face {
+    font-family: 'Founders Grotesk-medium',sans-serif;
+    src: url(FoundersGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: 'Founders Grotesk-regular',sans-serif;
+    src: url(FoundersGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: 'Founders Grotesk-semibold',sans-serif;
+    src: url(FoundersGrotesk-Semibold.otf);
+}
+@font-face {
+    font-family: 'Founders Grotesk-bold',sans-serif;
+    src: url(FoundersGroteskXCond-Bold.otf);
+}
+
+
 
 
 
@@ -193,6 +216,7 @@ nav ul li a:hover:before{
 }
 
 .flex-one h1{
+    font-family: 'Founders Grotesk-bold',sans-serif;
     font-size: 64px;
     cursor: pointer;
 }
@@ -222,6 +246,7 @@ nav ul li a:hover:before{
 }
 
 .flex-three h1{
+    font-family: 'Founders Grotesk-bold',sans-serif;
     font-size: 64px;
     cursor: pointer;
 }
