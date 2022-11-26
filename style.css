@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('');
 *{
-    font-family: 'Founders Grotesk',sans-serif;
+    font-family: 'Founders Grotesk-regular',sans-serif;
     margin: 0;
-    padding: 0;    
+    padding: 0;   
     text-decoration: none;
     box-sizing: border-box;
-    color: #3F3F3F;
-     
+    color: #3F3F3F;     
 }
+
+
+
 
 @font-face {
     font-family: 'Founders Grotesk-light',sans-serif;
@@ -31,6 +33,28 @@
 }
 
 
+
+
+.loading-screen{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #f44336;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99999;
+    pointer-events: none;
+}
 
 
 
@@ -124,8 +148,8 @@ nav ul li a:hover:before{
 
 @media screen and (max-width:900px) {
     .menu{   
-        width: 80%;
-        height: 100%;      
+        width: 90%;
+        height: 75%;      
     }
    
     nav ul li a{
@@ -137,65 +161,6 @@ nav ul li a:hover:before{
         transition: all ease 0.5s;
     }   
 }
-
-.overlay{
-    position: absolute;
-    width: 100vw;
-    height: 108vh;
-    margin: 0 auto;
-    margin-top: -5%;
-    top: 0;
-    z-index: 99;
-}
-
-.first{
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.first h2{
-    color: #f8f8f8;
-    font-size: 28px;
-}
-
-.second{
-    left: 33.3%;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.second h2{
-    color: #f8f8f8;
-    font-size: 28px;
-}
-
-.third{
-    left: 66.6%;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.third h2{
-    color: #f8f8f8;
-    font-size: 28px;
-}
-
-@media screen and (max-width :1000px){
-    .overlay{
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        margin-top: -17%;
-    }
-}
-
-
 
 
 .hero{
@@ -213,12 +178,12 @@ nav ul li a:hover:before{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease ;
 }
 
 .flex-one h1{
     font-family: 'Founders Grotesk-bold',sans-serif;
     font-size: 64px;
-    cursor: pointer;
 }
 
 
@@ -234,7 +199,6 @@ nav ul li a:hover:before{
 .flex-two img{
     width: 100%;
     height: 80vh;
-    cursor: pointer;
     object-fit: cover;
 }
 
@@ -248,7 +212,6 @@ nav ul li a:hover:before{
 .flex-three h1{
     font-family: 'Founders Grotesk-bold',sans-serif;
     font-size: 64px;
-    cursor: pointer;
 }
 
 
@@ -355,6 +318,7 @@ nav ul li a:hover:before{
 .offerline-marquee p{
     background: transparent;
     display: inline-block;
+    font-family: 'Founders Grotesk-bold',sans-serif;
     font-size: 20px; 
 }
 
@@ -409,21 +373,29 @@ nav ul li a:hover:before{
             }
     }
 
-    .models{
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 75%;
-        margin: 0 auto;       
+        margin: 0 auto;
     }
-    .models img{
+
+    .reveal{
+        position: relative;
+    }
+
+    .reveal img{
         width: 100%;
         margin-top: 5%;
         border-top-right-radius: 500px;
         border-top-left-radius: 500px;
     }
-    @media screen and (max-width:768px){
-        .models{
+
+      @media screen and (max-width:768px){
+        .container {
             width: 90%;
-            margin: 0 auto;       
-        }
+          }
     }
 
 .trends{
