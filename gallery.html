@@ -12,7 +12,7 @@
     
 </head> 
 
-<body data-barba="wrapper" onload ="move()">
+<body data-barba="wrapper">
 
     <div class="load-container">
         <div class="loading-screen"></div>
@@ -100,31 +100,7 @@
     
          
       
-    
-        <div class="steeze">
-            <h2>Steeze</h2>
-            <div class="steeze-slider">
-                <div class="item">
-                    <img src="malil.jpg">
-                </div>
-                <div class="item">
-                    <img src="no-revisions-kWVImL5QxJI-unsplash.jpg">
-                </div>
-                <div class="item">
-                    <img src="men.webp">
-                </div>
-                <div class="item">
-                    <img src="zahir-namane-TjUJJACTav4-unsplash.jpg">
-                </div>
-                <div class="item">
-                    <img src="shayan-rti-jRdXolKRYUU-unsplash.jpg">
-                </div>
-                <div class="item">
-                    <img src="men4.jpeg">
-                </div>
-            </div>
-            <h3>Swipe<i class="fa-solid fa-arrow-right-long"></i></h3>
-        </div>
+
     
         <div class="contact">
             <div class="contact-left">
@@ -207,70 +183,7 @@
     <script src="menu.js"></script>
     <script src="pagetransitions.js"></script>
 
-    <script>
-        function delay(n) {
-            n = n || 2000;
-            return new Promise((done) => {
-                setTimeout(() =>{
-                done();
-            }, n);       
-            })     
-        }
-     
-        function pageTransition(){
-            var tl = gsap.timeline();
-            tl.to(".loading-screen",{
-                duration: 1.2,
-                width: "100%",
-                left: "0",
-                ease:"Expo.EaseInOut",          
-            })
-     
-            tl.to(".loading-screen",{
-                duration: 1,
-                width: "100%",
-                left: "100%",
-                ease:"Expo.EaseInOut", 
-                delay: 0.3         
-            })
-            tl.set(".loading-screen", {left: "-100%"});        
-        }
-     
-        function contentAnimation() {
-            var tl = gsap.timeline();
-            tl.from(".aniamte-this", { duration: 1, y: 30, opacity:0, stagger:0.4, delay:0.2 })
-        }
-     
-        $(function() {
-            barba.init({
-                
-                sync: true,
-     
-                transitions:[
-                    {
-                        async leave(data){
-                            const done = this.async();
-     
-                            pageTransition();
-     
-                            await delay(1000);
-                            done();
-                        },
-     
-                        async enter(data){
-                            contentAnimation();
-                        },
-     
-                        async once (data){
-                            contentAnimation();
-                        },
-                    }
-                ]
-            })
-     
-        })
-     </script> 
-
+  
 
    
 </body>  
