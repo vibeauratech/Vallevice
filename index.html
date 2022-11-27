@@ -12,7 +12,7 @@
     
 </head> 
 
-<body onload="slider()" data-barba="wrapper">
+<body onload="slider()" onload="move()" data-barba="wrapper">
 
     <div class="load-container">
         <div class="loading-screen"></div>
@@ -226,6 +226,70 @@
     <script src="slides.js"></script>
     <script src="menu.js"></script>
     <script src="pagetransitions.js"></script> 
+
+    <script>
+         function delay(n) {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() =>{
+        done();
+    }, n);       
+    })     
+}
+
+function pageTransition(){
+    var tl = gsap.timeline();
+    tl.to(".loading-screen",{
+        duration: 1.2,
+        width: "100%",
+        left: "0",
+        ease:"Expo.EaseInOut",          
+    })
+
+    tl.to(".loading-screen",{
+        duration: 1,
+        width: "100%",
+        left: "100%",
+        ease:"Expo.EaseInOut", 
+        delay: 0.3         
+    })
+    tl.set(".loading-screen", {left: "-100%"});        
+}
+
+function contentAnimation() {
+    var tl = gsap.timeline();
+    tl.from(".aniamte-this", { duration: 1, y: 30, opacity:0, stagger:0.4, delay:0.2 })
+}
+
+$(function() {
+    barba.init({
+        
+        sync: true,
+
+        transitions:[
+            {
+                async leave(data){
+                    const done = this.async();
+
+                    pageTransition();
+
+                    await delay(1000);
+                    done();
+                },
+
+                async enter(data){
+                    contentAnimation();
+                },
+
+                async once (data){
+                    contentAnimation();
+                },
+            }
+        ]
+    })
+
+})
+    </script>
        
 
         
