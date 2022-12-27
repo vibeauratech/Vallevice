@@ -64,22 +64,29 @@
     text-align: center;
 }
 
-
+.nav-bar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -90px;
+}
 
 .toggleBtn{
     display: inline-block;
-    position: fixed;
     width: 100px;
     height: 90px;
-    top: 0;
-    left: 0;
     z-index: 10;
     border-bottom-right-radius: 100px;
     background-color: #ffe63e;
     cursor: pointer;
     padding: 22px 25px;
 }
-
 
 
 .toggleBtn img{
@@ -105,6 +112,14 @@
     z-index: 9;
     transform: scale(0);
     transform-origin: top left;
+}
+
+.cart img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-left: -100px;
+    cursor: pointer;
 }
 
 nav{
@@ -549,6 +564,7 @@ button#prev{
 
 .steeze{
     background: #000000;
+    color: #F8F8F8;
     height: auto;
     margin:0 ;
     padding: 5%;
@@ -560,39 +576,50 @@ button#prev{
     margin-bottom: 3%;
     color: #F8F8F8;
 }
-.steeze h3{
-    text-align: right;
-    margin-top: 3%;
+
+
+.shop-con{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.product-box{
+    position: relative;
+    color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-box p{
+    color: #f8f8f8;
+}
+
+.product-img{
+    width: 255px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.cart-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F8F8F8;
+    padding-top: 10px;
+}
+
+.cart-price span{
+    font-size: 14px;
+    font-weight: 700;
     color: #F8F8F8;
 }
 
-.steeze i{
-    margin-left: 2%;
-    color: #f8f8f8;
-}
-.item img{
-    width: 85%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-.steeze-slider.slick-initialized.slick-slider .slick-arrow{
-    position: absolute;
-    top: -25px;
-}
-
-
-.steeze-slider.slick-initialized.slick-slider .slick-prev.slick-arrow{
-    opacity: 0;
-    right: 180px;
-    left: inherit;
-    
-}
-.steeze-slider.slick-initialized.slick-slider .slick-next.slick-arrow{
-    opacity: 0;
-    right: 90px;
-    
+.cart-price i{
+    color: #F8F8F8;
 }
 
 @media screen and (max-width: 768px){
